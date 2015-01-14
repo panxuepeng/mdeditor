@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>markdown eiditor based ace</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/markdown-editor.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Markdown Editor</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left" role="search">
+	  <div id="toolbar" class="btn-toolbar" role="toolbar">
+		<div class="btn-group hide">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-original-title="" title="">
+				<i class="octicon octicon-plus">+</i>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#" class="do-summary-new">New Summary Entry</a></li>
+				<li><a href="#" class="do-files-new">New File</a></li>
+				<li><a href="#" class="do-files-upload">Upload Files</a></li>
+			</ul>
+        </div>
+      <div class="btn-group">
+        <button name="bold" type="button" class="btn btn-default"><i class="fa fa-bold"></i></button>
+        <button name="italic" type="button" class="btn btn-default"><i class="fa fa-italic"></i></button>
+        <button name="strikethrough" type="button" class="btn btn-default"><i class="fa fa-strikethrough"></i></button>
+      </div>
+      <div class="btn-group">
+        <button name="H1" type="button" class="btn btn-default">H1</button>
+        <button name="H2" type="button" class="btn btn-default">H2</button>
+        <button name="H3" type="button" class="btn btn-default">H3</button>
+        <button name="H4" type="button" class="btn btn-default">H4</button>
+      </div>
+      <div class="btn-group">
+        <button name="ul" type="button" class="btn btn-default"><i class="fa fa-list-ul"></i></button>
+        <button name="ol" type="button" class="btn btn-default"><i class="fa fa-list-ol"></i></button>
+        <button name="table" type="button" class="btn btn-default"><i class="fa fa-table"></i></button>
+        <button name="link" type="button" class="btn btn-default"><i class="fa fa-chain"></i></button>
+        <button name="image" type="button" class="btn btn-default"><i class="fa fa-picture-o"></i></button>
+        <button name="code" type="button" class="btn btn-default"><i class="fa fa-code"></i></button>
+      </div>
+	 
+    </div>
+	 </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gear"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="mdeditor-source"></div>
+<div id="mdeditor-preview"></div>
+
+
+<script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://cdn.bootcss.com/ace/1.1.3/ace.js"></script>
+<script src="http://cdn.bootcss.com/marked/0.3.2/marked.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
